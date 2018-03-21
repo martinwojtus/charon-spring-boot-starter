@@ -5,7 +5,6 @@ import com.github.tomakehurst.wiremock.junit.WireMockRule
 import org.junit.Rule
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.autoconfigure.web.ServerProperties
-import org.springframework.boot.context.embedded.EmbeddedWebApplicationContext
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.http.HttpEntity
 import org.springframework.http.HttpHeaders
@@ -38,8 +37,8 @@ abstract class BasicSpec extends Specification {
 
     @Shared
     private RestTemplate restTemplate = new RestTemplate()
-    @Autowired
-    private EmbeddedWebApplicationContext context
+//    @Autowired
+//    private EmbeddedWebApplicationContext context
     @Autowired
     private ServerProperties server
 
